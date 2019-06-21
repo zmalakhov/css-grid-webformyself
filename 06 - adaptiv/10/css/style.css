@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+table td, table th {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.table {
+ overflow: auto;
+ max-width: 100%;
+}
+
+.table table {
+  min-width: 560px;
+}
+
+@media (max-width: 680px) {
+
+  .table--two table thead {
+    display: none;
+  }
+
+  .table--two table tr {
+    display: block;
+  }
+
+  .table--two table td {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table--two table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+}
