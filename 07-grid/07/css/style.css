@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    /*grid-template-rows: repeat(3, 150px);*/
+
+    /*grid-auto-flow: column;*/
+    grid-auto-flow: row  dense;
+
+}
+
+.grid__element {
+    background-color: #f00;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.grid__element:nth-child(3){
+    /*grid-column: span 2;*/
+
+}
+
+
+
+
+
+
+
+
+
